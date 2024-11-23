@@ -1,22 +1,12 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
-void solve() {
-    int T;
-    cin >> T;
-
-    while (T--) {
-        int a, b, c, d;
-        cin >> a >> b >> c >> d;
-
-        int max_tastiness = max(max(a + c, a + d), max(b + c, b + d));
-
-        cout << max_tastiness << endl;
-    }
-}
-
 int main() {
-    solve();
-    return 0;
+	// your code goes here
+	int a,b;
+	cin>>a>>b;
+	int ans=a-(b/2);
+	cout<<ans<<endl;
+	return 0;
+
 }
