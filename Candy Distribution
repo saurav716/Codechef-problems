@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+    int N, M;
+    cin >> N >> M;
+    if (N % M == 0) { // Check if divisible
+        int candies_per_friend = N / M;
+        if (candies_per_friend % 2 == 0) { // Check if even
+            cout<<"Yes"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
+}
+ return 0;
+}
